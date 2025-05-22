@@ -9,8 +9,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 # بارگذاری دیتاست از UCI با استفاده از sep='\s+' و رشته خام
 url = "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data"
 columns = ['mpg', 'cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model_year', 'origin', 'car_name']
-df = pd.read_csv(url, sep=r'\s+', names=columns)  # اصلاح شده
-
+df = pd.read_csv(url, sep=r'\s+', names=columns)  
 # نمایش 5 نمونه اول دیتاست
 print("نمونه‌های اول دیتاست:")
 print(df.head())
@@ -19,8 +18,7 @@ print(df.head())
 # تبدیل مقادیر نادرست در ستون horsepower به NaN
 df['horsepower'] = pd.to_numeric(df['horsepower'], errors='coerce')
 # پر کردن مقادیر NaN در ستون horsepower بدون استفاده از inplace=True
-df['horsepower'] = df['horsepower'].fillna(df['horsepower'].mean())  # اصلاح شده
-
+df['horsepower'] = df['horsepower'].fillna(df['horsepower'].mean())  
 # تقسیم داده‌ها به ویژگی‌ها (X) و هدف (y)
 X = df.drop(['mpg', 'car_name'], axis=1)  # حذف هدف و نام خودرو
 y = df['mpg']  # هدف
