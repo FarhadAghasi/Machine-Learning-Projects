@@ -38,7 +38,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 Then, run the Python code with the following command:
 
 ```bash
-python auto_mpg_project.py
+python AutoMPG-ML.py
 ```
 
 ## Dataset Details:
