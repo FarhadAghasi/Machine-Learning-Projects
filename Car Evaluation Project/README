@@ -1,0 +1,41 @@
+# Car Evaluation Machine Learning Project
+
+## Overview
+
+This project aims to predict the quality of a car using various features such as **buying price**, **maintenance cost**, **number of doors**, **number of persons**, **lug boot size**, **safety**, and more. The dataset used in this project is from the **UCI Machine Learning Repository**.
+
+This project covers the following machine learning tasks:
+1. **Data Preprocessing**: Transforming categorical features into numerical values.
+2. **Feature Analysis**: Performing descriptive statistics and visualizing feature distributions using box plots.
+3. **Dimensionality Reduction**: Reducing data dimensions using Principal Component Analysis (PCA) for visualization and performance improvements.
+4. **Modeling**: Building machine learning models such as **Logistic Regression** and **Random Forest Classifier**.
+5. **Model Evaluation**: Evaluating the performance of the models using accuracy and classification metrics.
+
+## Dataset
+
+The dataset used in this project is the **Car Evaluation** dataset, which contains various attributes of cars, such as:
+- **buying**: Buying price of the car (categorical).
+- **maint**: Maintenance cost of the car (categorical).
+- **doors**: Number of doors in the car (categorical).
+- **persons**: Number of persons the car can accommodate (categorical).
+- **lug_boot**: Size of the car's luggage boot (categorical).
+- **safety**: Safety rating of the car (categorical).
+- **class**: Class of the car (target variable: 4 classes: `unacc`, `acc`, `good`, `vgood`).
+
+## Project Setup
+
+### Prerequisites
+
+Before running this project, you need to have **Python** and the following libraries installed:
+
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `requests`
+
+You can install these dependencies using `pip`:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn requests
